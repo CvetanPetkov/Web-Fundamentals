@@ -1,3 +1,5 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
 html {
     font-family: 'Tahoma', 'Helvetica', sans-serif;
     font-size: 13px;
@@ -43,10 +45,20 @@ h1 {
 
 .search-block {
     align-self: flex-end;
+    position: relative;
 }
+
 .search-block label {
-    margin: 10px 0;
     font-weight: bold;
+}
+
+.search-block::after {
+    font-family: 'FontAwesome', serif;
+    content: "\f002";
+    position: absolute;
+    right: 10px;
+    bottom: 7px;
+    font-size: 1rem;
 }
 
 .bottom-block {
